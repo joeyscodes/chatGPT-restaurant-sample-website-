@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserve your table at Osteria N.3 in Praia, Cape Verde. Book online for an unforgettable Italian dining experience.">
+  <title>Reservations | Osteria N.3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">OSTERIA N.3</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reservation.html" class="active">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservation.html" class="nav-cta">Book a Table</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=80');">
+    <div class="page-hero-content reveal">
+      <h1>Reserve Your Table</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> &gt; <span>Reservations</span></p>
+    </div>
+  </section>
+
+  <!-- RESERVATION CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Reservation Form Layout -->
+      <div class="reservation-layout reveal">
+
+        <!-- Form Column -->
+        <div>
+          <div id="reservationFormContainer">
+            <form id="reservationForm" class="reservation-form" action="https://formspree.io/f/FORM_ID" method="POST">
+              <input type="text" name="name" placeholder="Full Name *" required>
+              <input type="email" name="email" placeholder="Email Address *" required>
+              <input type="tel" name="phone" placeholder="Phone Number *" required>
+              <input type="date" name="date" placeholder="Date *" required>
+              <input type="time" name="time" placeholder="Time *" required>
+              <select name="guests" required>
+                <option value="" disabled selected>Number of Guests *</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8+">8+ Guests</option>
+              </select>
+              <textarea name="special-requests" placeholder="Special Requests (allergies, celebrations, dietary needs)"></textarea>
+              <button type="submit" class="btn btn-primary">Confirm Reservation</button>
+            </form>
+          </div>
+
+          <!-- Confirmation Message (hidden initially) -->
+          <div id="confirmationMsg" class="confirmation-msg">
+            <div class="check-icon">&#10003;</div>
+            <h3>Reservation Received!</h3>
+            <p>Thank you for choosing Osteria N.3. Your reservation request has been successfully submitted. Our team will confirm your booking via email or phone within 24 hours.</p>
+            <p style="margin-top: 1rem; font-style: italic; color: var(--accent);">We look forward to serving you an unforgettable evening.</p>
+          </div>
+        </div>
+
+        <!-- Info Column -->
+        <div class="reservation-info">
+          <h3>Your Evening Awaits</h3>
+          <p>At Osteria N.3, we believe dining is more than just a meal — it's an experience. Whether you're celebrating a special occasion or simply treating yourself to an exceptional evening, our team is here to make every detail perfect.</p>
+          <p><span class="icon">&#128339;</span> <strong>Opening Hours</strong><br>Mon–Fri: 12:00–15:00 & 19:00–23:00<br>Saturday: 12:00–23:00<br>Sunday: Closed</p>
+          <p><span class="icon">&#128205;</span> <strong>Location</strong><br>Praia, Cape Verde</p>
+          <p><span class="icon">&#128222;</span> <strong>Phone Reservation</strong><br>+238 918 610</p>
+          <p><span class="icon">&#9993;</span> <strong>Email Us</strong><br>reservations@osterian3.cv</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Osteria N.3</h4>
+        <p>Authentic Italian cuisine<br>in the heart of Praia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon–Fri: 12:00–15:00 & 19:00–23:00</p>
+        <p>Saturday: 12:00–23:00</p>
+        <p>Sunday: Closed</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Praia, Cape Verde</p>
+        <p>+238 918 610</p>
+        <p>info@osterian3.cv</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="TripAdvisor">⭐</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <span class="accent">Osteria N.3</span>. All rights reserved. Designed with passion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
